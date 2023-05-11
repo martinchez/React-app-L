@@ -136,7 +136,7 @@ settings.json
   },
 ```
 
-- ES7 Snippets
+### - ES7 Snippets
   - rafce (arrow func with export)
   - rfce (regular func with export )
   - same as the file name
