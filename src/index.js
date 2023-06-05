@@ -5,26 +5,33 @@ import './css/index.css'
 // const author = 'Martin Chege'
 // const title = 'Interesting Facts For Curious Minds'
 // const img = './images/book.jpg'
+const books = [
+  {
+    author: 'Jordan Moore',
+    title: 'Interesting Facts For Curious Minds',
+    img: './images/book.jpg',
+  },
+  {
+    author: 'James Clear',
+    title: 'Atomic Habits',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL._AC_UL900_SR900,600_.jpg',
+  },
+];
+// const names =['john', 'julia','SUZAN']
+// const newNames = names.map((name) => {
+//   return <h1>{name}</h1>
+// });
+
+// console.log(newNames)
 
 function BookList() {
   return (
     <section className="bookList">
-      <Book
-        author={firstBook.author}
-        title={firstBook.title}
-        img={firstBook.img}
-      />
-      <Book
-        author={secondBook.author}
-        title={secondBook.title}
-        img={secondBook.img}
-      />
+      {newNames}
     </section>
   )
 }
 
-// const Book = ({author, title, img, children}) => {
-// }
 const Book = (props) => {
   console.log(props)
   const {author, title, img } = props
@@ -35,16 +42,6 @@ const Book = (props) => {
       <h4>{author.toUpperCase()}</h4>
     </article>
   )
-}
-const firstBook = {
-  author: 'Jordan Moore',
-  title: 'Interesting Facts For Curious Minds',
-  img: './images/book.jpg',
-}
-const secondBook = {
-  author: 'James Clear',
-  title: 'Atomic Habits',
-  img: 'https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL._AC_UL900_SR900,600_.jpg',
 }
 
 
