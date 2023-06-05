@@ -2,9 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './css/index.css'
 
-// const author = 'Martin Chege'
-// const title = 'Interesting Facts For Curious Minds'
-// const img = './images/book.jpg'
+
 const books = [
   {
     author: 'Jordan Moore',
@@ -17,17 +15,17 @@ const books = [
     img: 'https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL._AC_UL900_SR900,600_.jpg',
   },
 ];
-// const names =['john', 'julia','SUZAN']
-// const newNames = names.map((name) => {
-//   return <h1>{name}</h1>
-// });
 
-// console.log(newNames)
 
 function BookList() {
   return (
     <section className="bookList">
-      {newNames}
+      {books.map((book) =>{
+        const {img, title, author} = book;
+        return (
+          <Book img ={img} title = {title} author ={author} />
+        )
+      })}
     </section>
   )
 }
