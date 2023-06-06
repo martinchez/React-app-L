@@ -22,12 +22,35 @@ const books = [
 function BookList() {
   return (
     <section className="bookList">
+      <EventExamples />
       {books.map((book) =>{
         console.log(book)
         const { img, title, author ,id} = book
 
         return <Book {...book} key={book.id} />
       })}
+    </section>
+  )
+}
+const EventExamples = () =>{
+  const handleFormInput = () =>{
+    console.log('Form input');
+  }
+  const handleButtonClick = () =>{
+    alert('Still Learning the tactics');
+  }
+  return (
+    <section>
+      <form>
+        <h2>Tyoical Fowm</h2>
+        <input
+          type="text"
+          name="example"
+          onChange={handleFormInput}
+          style={{ margin: '1rem 0' }}
+        />
+      </form>
+      <button onClick = {handleButtonClick} > Click me</button>
     </section>
   )
 }
@@ -43,11 +66,6 @@ const Book = (props) => {
     </article>
   )
 }
-
-
-
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
