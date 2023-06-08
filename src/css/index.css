@@ -20,6 +20,7 @@ body{
     border-radius:1rem;
     text-align: center;
     padding: 2rem;
+    position: relative;
 }
 .book img{
     width: 100%;
@@ -41,6 +42,17 @@ body{
   margin-top: 0.5rem;
   letter-spacing: 2px;
 }
-/* .book p{
-    margin-top: 1rem;
-} */
+.book p{
+    margin-top: 1rem 0 0.5rem;
+}
+.number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-bottom-right-radius:1rem;
+    border-top-left-radius:1rem;
+    background:#c35600;
+    color:white !important;
+}
