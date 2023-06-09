@@ -52,7 +52,12 @@ body{
     font-size: 1rem;
     padding: 0.75rem;
     border-bottom-right-radius:1rem;
-    border-top-left-radius:1rem;
+    /* border-top-left-radius:1rem; */
     background:#c35600;
     color:white !important;
+}
+h1{
+    text-align: center;
+    margin-top: 4rem;
+    text-transform: capitalize;
 }
